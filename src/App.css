@@ -1,0 +1,212 @@
+body {
+  background: #000;
+}
+.container {
+	max-width: 600px;
+	margin: 30px auto;
+	background: #fff;
+	padding: 20px;
+	border-radius: 18px;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.title {
+	font-size: 27px;
+	font-weight: bold;
+}
+.close {
+	font-size: 38px;
+}
+.btn-section {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.price {
+	background-color: #f8fafa;
+	border: 1px solid #d0d5d5;
+	border-radius: 10px;
+	padding: 15px 20px;
+	margin: 15px 0px 5px;
+	text-align: right;
+	font-size: 18px;
+	font-weight: bold;
+}
+.cake {
+	text-align: right;
+	color: #aaaaa9;
+	font-size: 14px;
+	font-weight: bold;
+}
+.price-box {
+	background-color: #f8f7f8;
+	border-radius: 10px;
+	margin-right: 15px;
+	font-weight: bold;
+	padding: 8px 15px;
+	width: 95px;
+	display: inline-block;
+	text-align: center;
+	box-sizing: border-box;
+	margin-top: -10px;
+}
+#op1 {
+	border-radius: 7px;
+}
+.time-title {
+	font-size: 20px;
+	font-weight: bold;
+}
+.button-list {
+	display: flex;
+	margin-top: 15px;
+	}
+.time-button {
+	flex: 1;
+	margin-right: 15px;
+	padding: 10px 0px;
+	border-radius: 50px;
+	border: none;
+	color: #3e3e3e;
+	font-weight: bold;
+  cursor: pointer;
+}
+.time-button:last-child {
+  margin-right: 0px;
+}
+.time-button.active, .time-button:hover, .time-button:focus{
+  background-color: #f8eb84;
+}
+.current {
+	margin-top: 10px;
+	font-size: 25px;
+}
+.Rate {
+	margin-top: 13px;
+	font-size: 16px;
+} 
+.Hide {
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 14px 0px;
+}
+.Hide .fa-angle-up {
+  font-size: 18px;
+  margin-left: 6px;
+}
+.apy {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	font-size: 16px;
+}
+.apy .number{
+  color: #f0c443;
+}
+.litext {
+	padding-left: 14px;
+	margin-bottom: 0px;
+	color: #aaaaa9;
+	font-size: 14px;
+	font-weight: bold;
+}
+.acc-apy {
+	font-size: 19px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 15px 0px 15px;
+}
+
+/* toggle css */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 29px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider::before {
+	position: absolute;
+	content: "";
+	height: 21px;
+	width: 21px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: hsl(45deg 85% 60%);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.radio {
+	display: flex;
+	align-items: center;
+	margin-left: 15px;
+	font-weight: bold;
+	color: #aaaaa9;
+}
+.btn-section .switch {
+	position: relative;
+	display: inline-block;
+	width: 39px;
+	height: 19px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.btn-section .slider::before {
+	position: absolute;
+	content: "";
+	height: 17px;
+	width: 18px;
+	left: 2px;
+	bottom: 1px;
+	background-color: white;
+	transition: .4s;
+}
+.btn-section input:checked + .slider::before {
+	transform: translateX(16px);
+}
+/* End toggle css */
