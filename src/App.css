@@ -1,5 +1,13 @@
-body {
+/* body {
   background: #000;
+} */
+table, th, td {
+  border:1px solid black;
+}
+h1 {
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
 }
 .container {
 	max-width: 600px;
